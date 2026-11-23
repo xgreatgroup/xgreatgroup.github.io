@@ -21,7 +21,7 @@
   materialStyles.href = 'material-update.css?v=1';
   document.head.appendChild(materialStyles);
 
-  const logoUrl = 'https://raw.githubusercontent.com/rafaelxgr/xgreat-clientes/main/infinity-serralheria/assets/InfinitySemfundo.png?v=2';
+  const logoUrl = 'https://raw.githubusercontent.com/xgreatgroup/xgreat-clientes/main/infinity-serralheria/assets/InfinitySemfundo.png?v=2';
   document.querySelectorAll('.brand-crop img').forEach((logo) => {
     logo.src = logoUrl;
     logo.alt = 'Infinity Serralheria';
