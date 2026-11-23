@@ -20,7 +20,7 @@ jobs:
       - name: Checkout repositório de clientes
         uses: actions/checkout@v4
         with:
-          repository: rafaelxgr/xgreat-clientes
+          repository: xgreatgroup/xgreat-clientes
           ref: main
           path: _clientes_source
 
