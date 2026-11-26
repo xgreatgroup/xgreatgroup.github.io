@@ -112,3 +112,64 @@ body.xg-theme .crm-board__tag,
 body.xg-theme .process-step::before { color: #061820; background: linear-gradient(125deg,#04c8e8,#a9effb); }
 body.xg-theme .crm-stage h3 { color: #a9effb; }
 body.xg-theme .crm-warning { border-left-color: var(--xg-red); }
+
+/* Public Food and Encomendas pages share the institutional material. */
+body.xg-theme.page-food .food-skip { background: #a9effb; }
+body.xg-theme.page-food .food-board__tag { color: #a9effb; border-color: rgba(4,200,232,.28); background: rgba(4,200,232,.07); }
+body.xg-theme.page-food .food-method .os-card { border-top-color: rgba(4,200,232,.5); }
+body.xg-theme.page-food .food-case { border-color: rgba(4,200,232,.22); background: var(--xg-card); }
+body.xg-theme.page-food .food-case__block h4 { color: #a9effb; }
+
+body.product-page.xg-theme {
+  --gold: #a9effb;
+  --cyan: #04c8e8;
+  --muted: #aebcc9;
+  --line: rgba(156,196,212,.16);
+}
+body.product-page.xg-theme .site-header { position: sticky; top: 0; z-index: 1000; }
+body.product-page.xg-theme .site-header__inner { position: relative; }
+body.product-page.xg-theme .site-nav .nav-cta { min-height: 42px; }
+body.product-page.xg-theme .product-local-nav {
+  display: flex; align-items: center; justify-content: space-between; gap: 20px;
+  padding: 14px 0; color: #c6d4de; font-size: .78rem;
+}
+body.product-page.xg-theme .product-local-nav > span { color: #a9effb; font-family: monospace; letter-spacing: .09em; text-transform: uppercase; white-space: nowrap; }
+body.product-page.xg-theme .product-local-nav > div { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+body.product-page.xg-theme .product-local-nav a:hover { color: var(--xg-cyan); }
+body.product-page.xg-theme .product-site-menu { display: none; }
+body.product-page.xg-theme .product-hero h1 em { color: #a9effb; }
+body.product-page.xg-theme .button:hover { border-color: rgba(4,200,232,.5); }
+body.product-page.xg-theme .button.gold { color: #061820; background: linear-gradient(125deg,#04c8e8,#a9effb); }
+body.product-page.xg-theme .image-window { border-color: rgba(4,200,232,.27); background: #111820; }
+body.product-page.xg-theme .product-logo img { border-color: rgba(4,200,232,.3); }
+body.product-page.xg-theme .intro-strip b { color: #a9effb; }
+body.product-page.xg-theme :is(.feature,.store-card) { border-color: var(--xg-line); background: var(--xg-card); }
+body.product-page.xg-theme .scope-note { border-left-color: var(--xg-red); background: rgba(201,29,53,.05); }
+body.product-page.xg-theme .tag { color: #a9effb; }
+body.product-page.xg-theme .final-cta { border-color: rgba(4,200,232,.28); background: linear-gradient(125deg,rgba(32,42,51,.92),rgba(17,24,32,.96)); }
+body.product-page.xg-theme .product-footer { border-top-color: rgba(4,200,232,.19); }
+@media (max-width: 980px) {
+  body.product-page.xg-theme .product-site-menu { display: block; margin-left: 0; }
+  body.product-page.xg-theme .product-site-menu summary {
+    display: grid; place-content: center; gap: 4px; width: 42px; height: 42px;
+    border: 1px solid rgba(156,196,212,.3); border-radius: 10px;
+    background: rgba(32,42,51,.55); cursor: pointer; list-style: none;
+  }
+  body.product-page.xg-theme .product-site-menu summary::-webkit-details-marker { display: none; }
+  body.product-page.xg-theme .product-site-menu summary span { display: block; width: 18px; height: 2px; border-radius: 2px; background: #f5f7fa; }
+  body.product-page.xg-theme .product-site-menu nav {
+    position: absolute; top: calc(100% - 1px); right: 0; z-index: 1001;
+    display: grid; gap: 0; width: min(300px, 90vw); padding: 12px;
+    border: 1px solid rgba(4,200,232,.22); border-radius: 0 0 14px 14px;
+    background: #111820; box-shadow: 0 20px 45px rgba(0,0,0,.42);
+  }
+  body.product-page.xg-theme .product-site-menu nav a { padding: 12px; color: #e2eaf0; }
+  body.product-page.xg-theme .product-site-menu nav a:hover,
+  body.product-page.xg-theme .product-site-menu nav a[aria-current] { color: var(--xg-cyan); }
+}
+@media (max-width: 720px) {
+  body.product-page.xg-theme .product-local-nav { display: block; padding: 12px 0; }
+  body.product-page.xg-theme .product-local-nav > span { display: none; }
+  body.product-page.xg-theme .product-local-nav > div { flex-wrap: nowrap; gap: 17px; overflow-x: auto; white-space: nowrap; scrollbar-width: none; }
+  body.product-page.xg-theme .product-local-nav > div::-webkit-scrollbar { display: none; }
+}
