@@ -137,6 +137,10 @@ body.product-page.xg-theme .product-local-nav > span { color: #a9effb; font-fami
 body.product-page.xg-theme .product-local-nav > div { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
 body.product-page.xg-theme .product-local-nav a:hover { color: var(--xg-cyan); }
 body.product-page.xg-theme .product-site-menu { display: none; }
+@media (min-width: 981px) {
+  body.product-page.xg-theme .wrap { width: min(1320px, calc(100% - 64px)); }
+}
+body.product-page.xg-theme .product-hero h1 { font-size: clamp(2.8rem, 5.5vw, 5.5rem); }
 body.product-page.xg-theme .product-hero h1 em { color: #a9effb; }
 body.product-page.xg-theme .button:hover { border-color: rgba(4,200,232,.5); }
 body.product-page.xg-theme .button.gold { color: #061820; background: linear-gradient(125deg,#04c8e8,#a9effb); }
